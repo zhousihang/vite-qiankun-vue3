@@ -1,0 +1,33 @@
+{
+  "name": "vite-qiankun-vue3",
+  "version": "1.0.0",
+  "description": "vite + qiankun + vue3",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm-run-all --parallel install:*",
+    "install:main": "cd ./main && npm install",
+    "install:demo1": "cd ./children/demo1 && npm install",
+    "install:demo2": "cd ./children/demo2 && npm install",
+    "serve": "npm-run-all --parallel start:*",
+    "start:main": "cd ./main && vite --open",
+    "start:demo1": "cd ./children/demo1 && vite",
+    "start:demo2": "cd ./children/demo2 && vite",
+    "build": "npm-run-all --parallel build:*",
+    "build:main": "cd ./main && npm run build",
+    "build:demo1": "cd ./children/demo1 && npm run build",
+    "build:demo2": "cd ./children/demo2 && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhousihang/vite-qiankun-vue3.git"
+  },
+  "author": "zsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhousihang/vite-qiankun-vue3/issues"
+  },
+  "homepage": "https://github.com/zhousihang/vite-qiankun-vue3#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
